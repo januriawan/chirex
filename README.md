@@ -31,7 +31,6 @@ mysql_select_db($database) or die("Maaf, Database tidak bisa dibuka");
 ```
 ## Formula yang digunakan:
 ```
-Certainty Factor (CF)
 Posted by totoharyanto on November 25th, 2011 / totoharyanto.staff.ipb.ac.id/2011/11/25/certainty-factor-cf/
 
 Certainty Factor (CF) merupakan salah satu teknik yang digunakan untuk mengatasi ketidakpastian dalam pengambilan keputusan. Certainty Factor (CF) dapat terjadi dengan berbagai kondisi. 
