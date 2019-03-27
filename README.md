@@ -3,7 +3,7 @@
 
 Berikut tampilan sistem yang di buat.
 
-![](Home 1.png)
+![alt text](https://github.com/januriawan/Chirex.1.0/blob/master/Admin%201.png)
 
 ## Configure
 
