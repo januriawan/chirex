@@ -3,7 +3,7 @@
 
 Berikut tampilan sistem yang di buat.
 
-![](header.png)
+![](Home 1.png)
 
 ## Configure
 
@@ -24,7 +24,7 @@ mysql_select_db($database) or die("Maaf, Database tidak bisa dibuka");
 
 Semoga hasil karya ini dapat berguna serta bermanfaat bagi perkembangan Teknologi dan Informasi pada khususnya. Serta sebagai kajian bagi mahasiswa dalam pengambilan skripsi. .
 
-_Di dedikasikan untuk bunga hati saya, semoga bahagia selalu dalam satu senti, semoga.. [Wiki][wiki]._
+_Di dedikasikan untuk bunga hati saya, semoga bahagia selalu dalam satu senti, semoga.. [Januriawan]._
 
 
 ## Release History
