@@ -29,6 +29,11 @@ mysql_connect($server,$username,$password) or die("Koneksi gagal");
 mysql_select_db($database) or die("Maaf, Database tidak bisa dibuka");
 ?>
 ```
+## Formula yang digunakan:
+```
+CFc (CF1,CF2) = CF1 + CF2 (1- CF1)                        ; jika CF1 dan CF2 keduanya posistif
+CFc (CF1,CF2) = CF1 + CF2 (1+ CF1)                        ; jika CF1 dan CF2 keduanya negative
+CFc (CF1,CF2) = {CF1 + CF2} / (1-min{| CF1|,| CF2|})      ; jika salah satu negatif```
 
 ## Usage example
 
