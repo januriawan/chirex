@@ -1,0 +1,38 @@
+/* CSS Document */
+
+div.paging{
+padding:2px;
+margin:2px;
+text-align:left;
+font-family:Tahoma;
+font-size:12px;
+}
+div.paging a{
+padding:5px 5px 5px 5px;
+margin-right:2px;
+border:1px solid #DEDFDE;
+text-decoration:none;
+color:#3a714e;
+}	
+div.paging a:hover{
+border:1px solid #735358;
+color:#000000;
+background-color:#e4f7f5;
+}
+div.paging span.current{
+padding:6px 6px 6px 6px;
+margin-right:2px;
+border:1px solid #3a714e;
+font-weight:bold;
+background-color:#558e6a;
+color:#FFFFFF;
+}
+div.paging span.disabled{
+padding:5px 5px 5px 5px;
+margin-right:2px;
+border:1px solid #999999;
+color:#999999;
+}
+div.paging span.prevnext{
+font-weight:bold;
+}

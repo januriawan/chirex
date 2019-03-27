@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9]+)/?$ ?module=$1 [NC]
+RewriteRule ^riwayat-detail/([0-9]+)/?$ index.php?module=riwayat-detail&id=$1 [NC]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([0-9]+)/?$ index.php?module=$1&act=$2&id=$3 [NC]
+RewriteRule ^admin/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/?$ index.php?module=admin&act=$1&id=$2 [NC]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z]+)/?$ index.php?module=$1&act=$2 [NC]

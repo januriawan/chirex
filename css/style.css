@@ -1,0 +1,154 @@
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px;
+    border-radius: 0.4em;
+    border: 1px solid #ddd;
+}
+
+select option {
+  margin: 40px;
+  background: #31708f;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+
+
+select option[data-id="0"]{ /* data-id not val */
+    color: #ffffff;
+}
+select option[data-id="1"]{ /* data-id not val */
+    color: #cc66ff;
+}
+select option[data-id="2"] {   
+    color: #019AFF;
+}
+select option[data-id="3"] {   
+    color: #00CBFD;
+}
+select option[data-id="4"] {   
+    color: #00FEFE;
+}
+select option[data-id="5"] {   
+    color: #A4F804;
+}
+select option[data-id="6"] {   
+    color: #FFFC00;
+}
+select option[data-id="7"] {   
+    color: #FDCD01;
+}
+select option[data-id="8"] {   
+    color: #FD9A01;
+}
+select option[data-id="9"] {   
+    color: #FB6700;
+}
+
+select:disabled {
+    background-color: #cccccc;
+}
+
+#tombol {
+  position:inherit;
+}
+
+tbody.pilihkondisi td.opsi{
+    text-align:center; 
+    vertical-align:middle;
+}
+
+tbody.pilihkondisi td,
+tbody.pilihkondisi td.gejala,
+tbody.pilihkondisi th{
+    vertical-align:middle;
+}
+
+tbody.pilihkondisi th{
+    text-align:center; 
+    vertical-align:middle;
+    background: #ecf0f1;
+
+}
+
+span.hasil{
+    padding: 8px;
+}
+
+table.diagnosa th{
+    background-color: #9b59b6;   
+    color: #fff;
+}
+
+table.diagnosa {
+    border: 2px solid #9b59b6;
+}
+
+table.table-bordered.diagnosa th{
+    border: 1px solid #9b59b6;
+}
+table.table-bordered.diagnosa td {
+    border: 1px solid #e9d5eb;
+}
+
+/*Konsultasi*/
+table.konsultasi th{
+    background-color: #95afc0;   
+    color: #fff;
+}
+
+table.konsultasi {
+    border: 1px solid #95afc0;
+}
+
+table.table-bordered.konsultasi th{
+    border: 1px solid #95afc0;
+}
+table.table-bordered.konsultasi td {
+    border: 1px solid #c9d1d9;
+}
+
+/*Riwayat*/
+table.riwayat th{
+    background-color: #22a6b3;   
+    color: #fff;
+}
+
+table.riwayat {
+    border: 1px solid #22a6b3;
+}
+
+table.table-bordered.riwayat th{
+    border: 1px solid #22a6b3;
+}
+table.table-bordered.riwayat td {
+    border: 1px solid #c9d1d9;
+    vertical-align: middle;
+}
+
+
+span.kondisipilih {
+    background-color: #2f2130;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+div.paging {
+  margin-top: 25px;
+}
+
+.margin4 {
+    margin: 4px;
+}
+
+img.post{
+    
+}
+
+.well {
+  overflow: hidden;
+}
