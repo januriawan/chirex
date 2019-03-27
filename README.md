@@ -114,6 +114,6 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 ## Disclaimer
 
 * Dilarang keras di perjual-belikan, source ini saya publikasi untuk keperluan belajar saja.
-    * Untuk yang mau file dokumentasi / skripsi bisa request dengan menghubungi saya.
+    * Untuk yang mau file dokumentasi / skripsi bisa request dengan menghubungi saya (gratis).
 
 
