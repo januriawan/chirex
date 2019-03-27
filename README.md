@@ -19,7 +19,7 @@
 
 ## Configure
 
-Use XAMPP v.3.2.2 With Php 5: Set your database name in config.php
+Gunakan XAMPP v.3.2.2 dengan Php 5: setting nama database anda di file config.php
 
 ```<?php
 $server = "localhost";
