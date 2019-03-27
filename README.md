@@ -34,7 +34,9 @@ mysql_select_db($database) or die("Maaf, Database tidak bisa dibuka");
 Certainty Factor (CF)
 Posted by totoharyanto on November 25th, 2011 / totoharyanto.staff.ipb.ac.id/2011/11/25/certainty-factor-cf/
 
-Certainty Factor (CF) merupakan salah satu teknik yang digunakan untuk mengatasi ketidakpastian dalam pengambilan keputusan. Certainty Factor (CF) dapat terjadi dengan berbagai kondisi. Diantara kondisi yang terjadi adalah terdapat beberapa antensenden (dalam rule yang berbeda) dengan satu konsekuen yang sama. Dalam kasus ini, kita harus mengagregasikan nilai CF keseluruhan dari setiap kondisi yang ada. Berikut formula yang digunakan:
+Certainty Factor (CF) merupakan salah satu teknik yang digunakan untuk mengatasi ketidakpastian dalam pengambilan keputusan. Certainty Factor (CF) dapat terjadi dengan berbagai kondisi. 
+Diantara kondisi yang terjadi adalah terdapat beberapa antensenden (dalam rule yang berbeda) dengan satu konsekuen yang sama. 
+Dalam kasus ini, kita harus mengagregasikan nilai CF keseluruhan dari setiap kondisi yang ada. Berikut formula yang digunakan:
 
 CFc (CF1,CF2) = CF1 + CF2 (1- CF1)                            ; jika CF1 dan CF2 keduanya posistif
 
@@ -85,7 +87,8 @@ Jawab:
 
 = 0,67
 
-Kesimpulannya: Suatu penyakit thypus disebabkan oleh gejala-gejala tersebut di atas memiliki nilai Certainty Factor ( CF) sebesar 0,67
+Kesimpulannya: Suatu penyakit thypus disebabkan oleh gejala-gejala 
+tersebut di atas memiliki nilai Certainty Factor ( CF) sebesar 0,67
 ```
 
 ## Usage example
