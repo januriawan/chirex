@@ -2,13 +2,16 @@
 > Sistem Pakar Diagnosa Penyakit Pada Ayam Menggunakan Metode Certainty Factor Berbasis Website Responsive.
 
 Berikut tampilan sistem yang di buat.
+
 * Home
+
 ![alt text](https://github.com/januriawan/Chirex.1.0/blob/master/Home%201.png)
 ![alt text](https://github.com/januriawan/Chirex.1.0/blob/master/Home%202.png)
 ![alt text](https://github.com/januriawan/Chirex.1.0/blob/master/Home%203.png)
-![alt text](https://github.com/januriawan/Chirex.1.0/blob/master/Home%204.png)
 ![alt text](https://github.com/januriawan/Chirex.1.0/blob/master/Home%205.png)
+
 * Admin
+
 ![alt text](https://github.com/januriawan/Chirex.1.0/blob/master/Admin%201.png)
 ![alt text](https://github.com/januriawan/Chirex.1.0/blob/master/Admin%202.png)
 
