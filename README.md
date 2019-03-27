@@ -1,11 +1,7 @@
 # Chirex.1.
 > Sistem Pakar Diagnosa Penyakit Pada Ayam Menggunakan Metode Certainty Factor Berbasis Website Responsive.
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
-
-One to two paragraph statement about your product and what it does.
+Berikut tampilan sistem yang di buat.
 
 ![](header.png)
 
@@ -38,7 +34,7 @@ _Di dedikasikan untuk bunga hati saya, semoga bahagia selalu dalam satu senti, s
 
 ## Meta
 
-Your Name – [@januriawan](https://twitter.com/januriawan) – januriawan@protonmail.com
+Copyright – [@januriawan](https://twitter.com/januriawan) – januriawan@protonmail.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
