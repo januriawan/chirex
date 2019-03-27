@@ -1,4 +1,4 @@
-# Chirex.1.
+# Chirex.1.0
 > Sistem Pakar Diagnosa Penyakit Pada Ayam Menggunakan Metode Certainty Factor Berbasis Website Responsive.
 
 Berikut tampilan sistem yang di buat.
