@@ -96,9 +96,6 @@ tersebut di atas memiliki nilai Certainty Factor ( CF) sebesar 0,67
 
 Semoga hasil karya ini dapat berguna serta bermanfaat bagi perkembangan Teknologi dan Informasi pada khususnya. Serta sebagai kajian bagi mahasiswa dalam pengambilan skripsi. .
 
-_Di dedikasikan untuk bunga hati saya, semoga bahagia selalu dalam satu senti, semoga.. [Januriawan]._
-
-
 ## Release History
 
 * 0.0.1
