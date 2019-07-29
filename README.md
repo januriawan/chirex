@@ -19,7 +19,8 @@
 
 ## Configure
 
-Gunakan XAMPP v.3.2.2 dengan <b>Php 5</b>: setting nama database anda di file config.php
+Gunakan XAMPP v.3.2.2 dengan <b>Php 5 (*)</b> & <b>mysql 5.6</b> : setting nama database anda di file config.php 
+* di php 7 ke atas akan terjadi error, silahkan fix bug nya jika ingin menggunakan php 7.
 
 ```<?php
 $server = "localhost";
