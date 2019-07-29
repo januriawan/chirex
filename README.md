@@ -95,7 +95,7 @@ tersebut di atas memiliki nilai Certainty Factor ( CF) sebesar 0,67
 
 ## Usage example
 
-Semoga hasil karya ini dapat berguna serta bermanfaat bagi perkembangan Teknologi dan Informasi pada khususnya. Serta sebagai kajian bagi mahasiswa dalam pengambilan skripsi. .
+Semoga hasil karya ini dapat berguna serta bermanfaat bagi perkembangan Teknologi dan Informasi pada khususnya. Serta sebagai kajian bagi mahasiswa dalam pengambilan skripsi.
 
 ## Release History
 
