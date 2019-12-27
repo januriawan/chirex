@@ -120,7 +120,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 ## Donation
 
 * Bagi yang ingin berdonasi untuk pengembangan sistem yang lain, boleh kirim ke email paypal saya 
-   * alamat paypal : fajanuriawan@gmail.com 
-   * siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya.
+   * Alamat paypal : fajanuriawan@gmail.com 
+   * Siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya.
 
 
