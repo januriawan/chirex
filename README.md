@@ -114,5 +114,13 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 
 * Dilarang keras di perjual-belikan, source ini saya publikasi untuk keperluan belajar saja.
     * Untuk yang mau file dokumentasi / skripsi bisa request dengan menghubungi saya (gratis).
+    * Update (Karena banyak yang meminta via Email, Sosmed dll. Mohon maaf karena keterbatasan waktu saya tidak bisa membalas, satu persatu
+    untuk itu silakan download di [Link Ini](https://www.scribd.com/document/431280343/Dokumentasi-Sistem-Pakar-Ayam-Skripsi)
+ 
+## Donation
+
+* Bagi yang ingin berdonasi untuk pengembangan sistem yang lain, boleh kirim ke email paypal saya 
+   * alamat paypal : fajanuriawan@gmail.com 
+   * siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya.
 
 
