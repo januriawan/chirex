@@ -18,13 +18,13 @@ switch ($_GET['act']) {
         }
       }
 
-      $sqlkondisi = mysql_query("SELECT * FROM kondisi order by id+0");
-      while ($rkondisi = mysql_fetch_array($sqlkondisi)) {
+      $sqlkondisi = mysqli_query($conn, "SELECT * FROM kondisi order by id+0");
+      while ($rkondisi = mysqli_fetch_array($sqlkondisi)) {
         $arkondisitext[$rkondisi['id']] = $rkondisi['kondisi'];
       }
 
-      $sqlpkt = mysql_query("SELECT * FROM penyakit order by kode_penyakit+0");
-      while ($rpkt = mysql_fetch_array($sqlpkt)) {
+      $sqlpkt = mysqli_query($conn, "SELECT * FROM penyakit order by kode_penyakit+0");
+      while ($rpkt = mysqli_fetch_array($sqlpkt)) {
         $arpkt[$rpkt['kode_penyakit']] = $rpkt['nama_penyakit'];
         $ardpkt[$rpkt['kode_penyakit']] = $rpkt['det_penyakit'];
         $arspkt[$rpkt['kode_penyakit']] = $rpkt['srn_penyakit'];
@@ -34,14 +34,14 @@ switch ($_GET['act']) {
       //print_r($arkondisitext);
 // -------- perhitungan certainty factor (CF) ---------
 // --------------------- START ------------------------
-      $sqlpenyakit = mysql_query("SELECT * FROM penyakit order by kode_penyakit");
+      $sqlpenyakit = mysqli_query($conn, "SELECT * FROM penyakit order by kode_penyakit");
       $arpenyakit = array();
-      while ($rpenyakit = mysql_fetch_array($sqlpenyakit)) {
+      while ($rpenyakit = mysqli_fetch_array($sqlpenyakit)) {
         $cftotal_temp = 0;
         $cf = 0;
-        $sqlgejala = mysql_query("SELECT * FROM basis_pengetahuan where kode_penyakit=$rpenyakit[kode_penyakit]");
+        $sqlgejala = mysqli_query($conn, "SELECT * FROM basis_pengetahuan where kode_penyakit=$rpenyakit[kode_penyakit]");
         $cflama = 0;
-        while ($rgejala = mysql_fetch_array($sqlgejala)) {
+        while ($rgejala = mysqli_fetch_array($sqlgejala)) {
           $arkondisi = explode("_", $_POST['kondisi'][0]);
           $gejala = $arkondisi[0];
 
@@ -79,7 +79,7 @@ switch ($_GET['act']) {
         $vlpkt1[$np1] = $value1;
       }
 
-      mysql_query("INSERT INTO hasil(
+      mysqli_query($conn, "INSERT INTO hasil(
                   tanggal,
                   gejala,
                   penyakit,
@@ -108,8 +108,8 @@ switch ($_GET['act']) {
         $kondisi = $value;
         $ig++;
         $gejala = $key;
-        $sql4 = mysql_query("SELECT * FROM gejala where kode_gejala = '$key'");
-        $r4 = mysql_fetch_array($sql4);
+        $sql4 = mysqli_query($conn, "SELECT * FROM gejala where kode_gejala = '$key'");
+        $r4 = mysqli_fetch_array($sql4);
         echo '<tr><td>' . $ig . '</td>';
         echo '<td>G' . str_pad($r4[kode_gejala], 3, '0', STR_PAD_LEFT) . '</td>';
         echo '<td><span class="hasil text text-primary">' . $r4[nama_gejala] . "</span></td>";
@@ -153,17 +153,17 @@ switch ($_GET['act']) {
            <table class='table table-bordered table-striped konsultasi'><tbody class='pilihkondisi'>
            <tr><th>No</th><th>Kode</th><th>Gejala</th><th width='20%'>Pilih Kondisi</th></tr>";
 
-      $sql3 = mysql_query("SELECT * FROM gejala order by kode_gejala");
+      $sql3 = mysqli_query($conn, "SELECT * FROM gejala order by kode_gejala");
       $i = 0;
-      while ($r3 = mysql_fetch_array($sql3)) {
+      while ($r3 = mysqli_fetch_array($sql3)) {
         $i++;
         echo "<tr><td class=opsi>$i</td>";
         echo "<td class=opsi>G" . str_pad($r3[kode_gejala], 3, '0', STR_PAD_LEFT) . "</td>";
         echo "<td class=gejala>$r3[nama_gejala]</td>";
         echo '<td class="opsi"><select name="kondisi[]" id="sl' . $i . '" class="opsikondisi"/><option data-id="0" value="0">Pilih jika sesuai</option>';
         $s = "select * from kondisi order by id";
-        $q = mysql_query($s) or die($s);
-        while ($rw = mysql_fetch_array($q)) {
+        $q = mysqli_query($conn, $s) or die($s);
+        while ($rw = mysqli_fetch_array($q)) {
           ?>
           <option data-id="<?php echo $rw['id']; ?>" value="<?php echo $r3['kode_gejala'] . '_' . $rw['id']; ?>"><?php echo $rw['kondisi']; ?></option>
           <?php
