@@ -16,7 +16,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
 
 // Hapus penyakit
   if ($module == 'penyakit' AND $act == 'hapus') {
-    mysql_query("DELETE FROM penyakit WHERE kode_penyakit='$_GET[id]'");
+    mysqli_query($conn,"DELETE FROM penyakit WHERE kode_penyakit='$_GET[id]'");
     header('location:../../index.php?module=' . $module);
   }
 
@@ -27,7 +27,7 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
     $srn_penyakit = $_POST[srn_penyakit];
     $fileName = $_FILES['gambar']['name'];
     move_uploaded_file($_FILES['gambar']['tmp_name'], "../../gambar/penyakit/" . $_FILES['gambar']['name']);
-    mysql_query("INSERT INTO penyakit(
+    mysqli_query($conn,"INSERT INTO penyakit(
 			      nama_penyakit,det_penyakit,srn_penyakit,gambar) 
 	                       VALUES(
 				'$nama_penyakit','$det_penyakit','$srn_penyakit','$fileName')");
@@ -45,14 +45,14 @@ if (!(isset($_SESSION['username']) && isset($_SESSION['password']))) {
     if ($fileName) {
       move_uploaded_file($_FILES['gambar']['tmp_name'], "../../gambar/penyakit/" . $_FILES['gambar']['name']);
 
-      mysql_query("UPDATE penyakit SET
+      mysqli_query($conn,"UPDATE penyakit SET
 					nama_penyakit   = '$nama_penyakit',
 					det_penyakit   = '$det_penyakit',
 					srn_penyakit   = '$srn_penyakit',
                       gambar   = '$fileName'
                WHERE kode_penyakit       = '$_POST[id]'");
     } else {
-      mysql_query("UPDATE penyakit SET
+      mysqli_query($conn,"UPDATE penyakit SET
 					nama_penyakit   = '$nama_penyakit',
 					det_penyakit   = '$det_penyakit',
 					srn_penyakit   = '$srn_penyakit'

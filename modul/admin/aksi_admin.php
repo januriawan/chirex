@@ -15,7 +15,7 @@ $act=$_GET[act];
 
 // Hapus admin
 if ($module=='admin' AND $act=='hapus'){
-  mysql_query("DELETE FROM admin WHERE username='$_GET[id]'");
+  mysqli_query($conn,"DELETE FROM admin WHERE username='$_GET[id]'");
   header('location:../../index.php?module='.$module);
 }
 
@@ -24,7 +24,7 @@ elseif ($module=='admin' AND $act=='input'){
 $username=$_POST[username];
 $nama_lengkap=$_POST[nama_lengkap];
 $pass=md5($_POST[password]);
-mysql_query("INSERT INTO admin(
+mysqli_query($conn,"INSERT INTO admin(
 			      username,password,nama_lengkap) 
 	                       VALUES(
 				'$username','$pass','$nama_lengkap')");
@@ -35,7 +35,7 @@ mysql_query("INSERT INTO admin(
 elseif ($module=='admin' AND $act=='update'){
 $username=$_POST[username];
 $nama_lengkap=$_POST[nama_lengkap];
-  mysql_query("UPDATE admin SET
+  mysqli_query($conn,"UPDATE admin SET
 					username   = '$username',
 					nama_lengkap   = '$nama_lengkap'
                 WHERE username       = '$_POST[id]'");

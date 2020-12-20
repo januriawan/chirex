@@ -1,7 +1,7 @@
 <title>Beranda - Chirexs 1.0</title>
 <?php 
-  $htgejala=mysql_query("SELECT count(*) as total from gejala");
-	$dtgejala=mysql_fetch_assoc($htgejala); ?>
+  $htgejala=mysqli_query($conn,"SELECT count(*) as total from gejala");
+	$dtgejala=mysqli_fetch_assoc($htgejala); ?>
 	<div class='row'>
         <div class='col-lg-3 col-xs-6'>
           <!-- small box -->
@@ -17,8 +17,8 @@
         </div>
         <!-- ./col -->
 <?php 
-	$htpenyakit=mysql_query("SELECT count(*) as total from penyakit");
-	  $dtpenyakit=mysql_fetch_assoc($htpenyakit); ?>
+	$htpenyakit=mysqli_query($conn,"SELECT count(*) as total from penyakit");
+	  $dtpenyakit=mysqli_fetch_assoc($htpenyakit); ?>
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-green">
@@ -34,8 +34,8 @@
         </div>
         <!-- ./col -->
 <?php 
-	$htpengetahuan=mysql_query("SELECT count(*) as total from basis_pengetahuan");
-	  $dtpengetahuan=mysql_fetch_assoc($htpengetahuan); ?>
+	$htpengetahuan=mysqli_query($conn,"SELECT count(*) as total from basis_pengetahuan");
+	  $dtpengetahuan=mysqli_fetch_assoc($htpengetahuan); ?>
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-yellow">
@@ -51,8 +51,8 @@
         </div>
         <!-- ./col -->
 <?php 
-	$htadmin=mysql_query("SELECT count(*) as total from admin");
-	  $dtadmin=mysql_fetch_assoc($htadmin); ?>
+	$htadmin=mysqli_query($conn,"SELECT count(*) as total from admin");
+	  $dtadmin=mysqli_fetch_assoc($htadmin); ?>
         <div class="col-lg-3 col-xs-6">
           <!-- small box -->
           <div class="small-box bg-red">

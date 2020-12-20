@@ -60,14 +60,14 @@ switch($_GET[act]){
 	if (empty ($offset)) {
 		$offset = 0;
 	}
-  $tampil=mysql_query("SELECT * FROM basis_pengetahuan ORDER BY kode_pengetahuan");
+  $tampil=mysqli_query($conn,"SELECT * FROM basis_pengetahuan ORDER BY kode_pengetahuan");
 	echo "<form method=POST action='?module=pengetahuan' name=text_form onsubmit='return Blank_TextField_Validator_Cari()'>
           <br><br><table class='table table-bordered'>
 		  <tr><td><input class='btn bg-olive margin' type=button name=tambah value='Tambah Basis Pengetahuan' onclick=\"window.location.href='pengetahuan/tambahpengetahuan';\"><input type=text name='keyword' style='margin-left: 10px;' placeholder='Ketik dan tekan cari...' class='form-control' value='$_POST[keyword]' /> <input class='btn bg-olive margin' type=submit value='   Cari   ' name=Go></td> </tr>
           </table></form>";
-		  	$baris=mysql_num_rows($tampil);
+		  	$baris=mysqli_num_rows($tampil);
 	if ($_POST[Go]){
-			$numrows = mysql_num_rows(mysql_query("SELECT * FROM basis_pengetahuan b,penyakit p where b.kode_penyakit=p.kode_penyakit AND p.nama_penyakit like '%$_POST[keyword]%'"));
+			$numrows = mysqli_num_rows(mysqli_query($conn,"SELECT * FROM basis_pengetahuan b,penyakit p where b.kode_penyakit=p.kode_penyakit AND p.nama_penyakit like '%$_POST[keyword]%'"));
 			if ($numrows > 0){
 				echo "<div class='alert alert-success alert-dismissible'>
                 <h4><i class='icon fa fa-check'></i> Sukses!</h4>
@@ -86,14 +86,14 @@ switch($_GET[act]){
             </tr>
           </thead>
 		  <tbody>"; 
-	$hasil = mysql_query("SELECT * FROM basis_pengetahuan b,penyakit p where b.kode_penyakit=p.kode_penyakit AND p.nama_penyakit like '%$_POST[keyword]%'");
+	$hasil = mysqli_query($conn,"SELECT * FROM basis_pengetahuan b,penyakit p where b.kode_penyakit=p.kode_penyakit AND p.nama_penyakit like '%$_POST[keyword]%'");
 	$no = 1;
 	$counter = 1;
-    while ($r=mysql_fetch_array($hasil)){
+    while ($r=mysqli_fetch_array($hasil)){
 	if ($counter % 2 == 0) $warna = "dark";
 	else $warna = "light";
-	$sql = mysql_query("SELECT * FROM gejala where kode_gejala = '$r[kode_gejala]'");
-	$rgejala=mysql_fetch_array($sql);
+	$sql = mysqli_query($conn,"SELECT * FROM gejala where kode_gejala = '$r[kode_gejala]'");
+	$rgejala=mysqli_fetch_array($sql);
        echo "<tr class='".$warna."'>
 			 <td align=center>$no</td>
 			 <td>$r[nama_penyakit]</td>
@@ -130,17 +130,17 @@ switch($_GET[act]){
           </thead>
 		  <tbody>
 		  "; 
-	$hasil = mysql_query("SELECT * FROM basis_pengetahuan ORDER BY kode_pengetahuan limit $offset,$limit");
+	$hasil = mysqli_query($conn,"SELECT * FROM basis_pengetahuan ORDER BY kode_pengetahuan limit $offset,$limit");
 	$no = 1;
 	$no = 1 + $offset;
 	$counter = 1;
-    while ($r=mysql_fetch_array($hasil)){
+    while ($r=mysqli_fetch_array($hasil)){
 	if ($counter % 2 == 0) $warna = "dark";
 	else $warna = "light";
-	$sql = mysql_query("SELECT * FROM gejala where kode_gejala = '$r[kode_gejala]'");
-	$rgejala=mysql_fetch_array($sql);
-	$sql2 = mysql_query("SELECT * FROM penyakit where kode_penyakit = '$r[kode_penyakit]'");
-	$rpenyakit=mysql_fetch_array($sql2);
+	$sql = mysqli_query($conn,"SELECT * FROM gejala where kode_gejala = '$r[kode_gejala]'");
+	$rgejala=mysqli_fetch_array($sql);
+	$sql2 = mysqli_query($conn,"SELECT * FROM penyakit where kode_penyakit = '$r[kode_penyakit]'");
+	$rpenyakit=mysqli_fetch_array($sql2);
        echo "<tr class='".$warna."'>
 			 <td align=center>$no</td>
 			 <td>$rpenyakit[nama_penyakit]</td>
@@ -219,14 +219,14 @@ switch($_GET[act]){
           <form name=text_form method=POST action='$aksi?module=pengetahuan&act=input' onsubmit='return Blank_TextField_Validator()'>
           <br><br><table class='table table-bordered'>
 		  <tr><td width=120>Penyakit</td><td><select class='form-control' name='kode_penyakit'  id='kode_penyakit'><option value=''>- Pilih Penyakit -</option>";
-		$hasil4 = mysql_query("SELECT * FROM penyakit order by nama_penyakit");
-		while($r4=mysql_fetch_array($hasil4)){
+		$hasil4 = mysqli_query($conn,"SELECT * FROM penyakit order by nama_penyakit");
+		while($r4=mysqli_fetch_array($hasil4)){
 			echo "<option value='$r4[kode_penyakit]'>$r4[nama_penyakit]</option>";
 		}
 		echo	"</select></td></tr>
 		<tr><td>Gejala</td><td><select class='form-control' name='kode_gejala' id='kode_gejala'><option value=''>- Pilih Gejala -</option>";
-		$hasil4 = mysql_query("SELECT * FROM gejala order by nama_gejala");
-		while($r4=mysql_fetch_array($hasil4)){
+		$hasil4 = mysqli_query($conn,"SELECT * FROM gejala order by nama_gejala");
+		while($r4=mysqli_fetch_array($hasil4)){
 			echo "<option value='$r4[kode_gejala]'>$r4[nama_gejala]</option>";
 		}
 		echo	"</select></td></tr>
@@ -238,8 +238,8 @@ switch($_GET[act]){
      break;
     
   case "editpengetahuan":
-    $edit=mysql_query("SELECT * FROM basis_pengetahuan WHERE kode_pengetahuan='$_GET[id]'");
-    $r=mysql_fetch_array($edit);
+    $edit=mysqli_query($conn,"SELECT * FROM basis_pengetahuan WHERE kode_pengetahuan='$_GET[id]'");
+    $r=mysqli_fetch_array($edit);
 	
     echo "<br>
 	<br>
@@ -247,15 +247,15 @@ switch($_GET[act]){
           <input type=hidden name=id value='$r[kode_pengetahuan]'>
           <br><br><table class='table table-bordered'>
 		  <tr><td width=120>Penyakit</td><td><select class='form-control' name='kode_penyakit' id='kode_penyakit'>";
-		$hasil4 = mysql_query("SELECT * FROM penyakit order by nama_penyakit");
-		while($r4=mysql_fetch_array($hasil4)){
+		$hasil4 = mysqli_query($conn,"SELECT * FROM penyakit order by nama_penyakit");
+		while($r4=mysqli_fetch_array($hasil4)){
 			echo "<option value='$r4[kode_penyakit]'"; if($r[kode_penyakit]==$r4[kode_penyakit]) echo "selected";
 			echo ">$r4[nama_penyakit]</option>";
 		}
 		echo	"</select></td></tr>
 		<tr><td>Gejala</td><td><select class='form-control' name='kode_gejala' id='kode_gejala'>";
-		$hasil4 = mysql_query("SELECT * FROM gejala order by nama_gejala");
-		while($r4=mysql_fetch_array($hasil4)){
+		$hasil4 = mysqli_query($conn,"SELECT * FROM gejala order by nama_gejala");
+		while($r4=mysqli_fetch_array($hasil4)){
 			echo "<option value='$r4[kode_gejala]'"; if($r[kode_gejala]==$r4[kode_gejala]) echo "selected";
 			echo ">$r4[nama_gejala]</option>";
 		}

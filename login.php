@@ -6,10 +6,10 @@ include "config/koneksi.php";
 $user=$_POST['username'];
 $pass=md5($_POST['password']);
 
-$login=mysql_query("select * from admin where username='$user' and password='$pass'");
+$login=mysqli_query($conn,"select * from admin where username='$user' and password='$pass'");
 
-$ketemu=mysql_num_rows($login);
-$r=mysql_fetch_array($login);
+$ketemu=mysqli_num_rows($login);
+$r=mysqli_fetch_array($login);
 if ($ketemu>0) {
 	$_SESSION['username'] = $r['username'];
 	$_SESSION['password'] = $r['password'];

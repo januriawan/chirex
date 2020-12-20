@@ -14,20 +14,20 @@ switch ($_GET[act]) {
             $offset = 0;
         }
 
-        $sqlgjl = mysql_query("SELECT * FROM gejala order by kode_gejala+0");
-        while ($rgjl = mysql_fetch_array($sqlgjl)) {
+        $sqlgjl = mysqli_query($conn,"SELECT * FROM gejala order by kode_gejala+0");
+        while ($rgjl = mysqli_fetch_array($sqlgjl)) {
             $argjl[$rgjl['kode_gejala']] = $rgjl['nama_gejala'];
         }
 
-        $sqlpkt = mysql_query("SELECT * FROM penyakit order by kode_penyakit+0");
-        while ($rpkt = mysql_fetch_array($sqlpkt)) {
+        $sqlpkt = mysqli_query($conn,"SELECT * FROM penyakit order by kode_penyakit+0");
+        while ($rpkt = mysqli_fetch_array($sqlpkt)) {
             $arpkt[$rpkt['kode_penyakit']] = $rpkt['nama_penyakit'];
             $ardpkt[$rpkt['kode_penyakit']] = $rpkt['det_penyakit'];
             $arspkt[$rpkt['kode_penyakit']] = $rpkt['srn_penyakit'];
         }
 
-        $tampil = mysql_query("SELECT * FROM hasil ORDER BY id_hasil");
-        $baris = mysql_num_rows($tampil);
+        $tampil = mysqli_query($conn,"SELECT * FROM hasil ORDER BY id_hasil");
+        $baris = mysqli_num_rows($tampil);
         if ($baris > 0) {
             echo"<div class='row'><div class='col-md-8'><table class='table table-bordered table-striped riwayat' style='overflow-x=auto' cellpadding='0' cellspacing='0'>
           <thead>
@@ -41,11 +41,11 @@ switch ($_GET[act]) {
           </thead>
 		  <tbody>
 		  ";
-            $hasil = mysql_query("SELECT * FROM hasil ORDER BY id_hasil limit $offset,$limit");
+            $hasil = mysqli_query($conn,"SELECT * FROM hasil ORDER BY id_hasil limit $offset,$limit");
             $no = 1;
             $no = 1 + $offset;
             $counter = 1;
-            while ($r = mysql_fetch_array($hasil)) {
+            while ($r = mysqli_fetch_array($hasil)) {
               if ($r[hasil_id]>0){
                 if ($counter % 2 == 0)
                     $warna = "dark";
@@ -137,8 +137,8 @@ switch ($_GET[act]) {
 <?php
 //$arr[] = array();
 
-$hasilg = mysql_query("SELECT hasil_id, count(hasil_id) jlh_id FROM hasil group by hasil_id ORDER BY jlh_id desc");
-while ($rg = mysql_fetch_array($hasilg)) {
+$hasilg = mysqli_query($conn,"SELECT hasil_id, count(hasil_id) jlh_id FROM hasil group by hasil_id ORDER BY jlh_id desc");
+while ($rg = mysqli_fetch_array($hasilg)) {
   if ($rg[hasil_id] > 0) {
     $arr[] = array('label' => '&nbsp;' . $arpkt[$rg['hasil_id']], 'data' => array(array('Penyakit ' . $rg['hasil_id'], $rg['jlh_id'])));
   }

@@ -16,21 +16,21 @@ if ($_GET['id']) {
     }
   }
 
-  $sqlkondisi = mysql_query("SELECT * FROM kondisi order by id+0");
-  while ($rkondisi = mysql_fetch_array($sqlkondisi)) {
+  $sqlkondisi = mysqli_query($conn,"SELECT * FROM kondisi order by id+0");
+  while ($rkondisi = mysqli_fetch_array($sqlkondisi)) {
     $arkondisitext[$rkondisi['id']] = $rkondisi['kondisi'];
   }
 
-  $sqlpkt = mysql_query("SELECT * FROM penyakit order by kode_penyakit+0");
-  while ($rpkt = mysql_fetch_array($sqlpkt)) {
+  $sqlpkt = mysqli_query($conn,"SELECT * FROM penyakit order by kode_penyakit+0");
+  while ($rpkt = mysqli_fetch_array($sqlpkt)) {
     $arpkt[$rpkt['kode_penyakit']] = $rpkt['nama_penyakit'];
     $ardpkt[$rpkt['kode_penyakit']] = $rpkt['det_penyakit'];
     $arspkt[$rpkt['kode_penyakit']] = $rpkt['srn_penyakit'];
     $argpkt[$rpkt['kode_penyakit']] = $rpkt['gambar'];
   }
 
-  $sqlhasil = mysql_query("SELECT * FROM hasil where id_hasil=" . $_GET['id']);
-  while ($rhasil = mysql_fetch_array($sqlhasil)) {
+  $sqlhasil = mysqli_query($conn,"SELECT * FROM hasil where id_hasil=" . $_GET['id']);
+  while ($rhasil = mysqli_fetch_array($sqlhasil)) {
     $arpenyakit = unserialize($rhasil['penyakit']);
     $argejala = unserialize($rhasil['gejala']);
   }
@@ -58,8 +58,8 @@ if ($_GET['id']) {
     $kondisi = $value;
     $ig++;
     $gejala = $key;
-    $sql4 = mysql_query("SELECT * FROM gejala where kode_gejala = '$key'");
-    $r4 = mysql_fetch_array($sql4);
+    $sql4 = mysqli_query($conn,"SELECT * FROM gejala where kode_gejala = '$key'");
+    $r4 = mysqli_fetch_array($sql4);
     echo '<tr><td>' . $ig . '</td>';
     echo '<td>G' . str_pad($r4[kode_gejala], 3, '0', STR_PAD_LEFT) . '</td>';
     echo '<td><span class="hasil text text-primary">' . $r4[nama_gejala] . "</span></td>";

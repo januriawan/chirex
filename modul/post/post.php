@@ -33,14 +33,14 @@ switch ($_GET[act]) {
         if (empty($offset)) {
             $offset = 0;
         }
-        $tampil = mysql_query("SELECT * FROM post ORDER BY kode_post");
+        $tampil = mysqli_query($conn,"SELECT * FROM post ORDER BY kode_post");
         echo "<form method=POST action='?module=post' name=text_form onsubmit='return Blank_TextField_Validator_Cari()'>
           <br><br><table class='table table-bordered'>
 		  <tr><td><input class='btn bg-olive margin' type=button name=tambah value='Tambah Post' onclick=\"window.location.href='post/tambahpost';\"><input type=text name='keyword' style='margin-left: 10px;' placeholder='Ketik dan tekan cari...' class='form-control' value='$_POST[keyword]' /> <input class='btn bg-olive margin' type=submit value='   Cari   ' name=Go></td> </tr>
           </table></form>";
-        $baris = mysql_num_rows($tampil);
+        $baris = mysqli_num_rows($tampil);
         if ($_POST[Go]) {
-            $numrows = mysql_num_rows(mysql_query("SELECT * FROM post where nama_post like '%$_POST[keyword]%'"));
+            $numrows = mysqli_num_rows(mysqli_query($conn,"SELECT * FROM post where nama_post like '%$_POST[keyword]%'"));
             if ($numrows > 0) {
                 echo "<div class='alert alert-success alert-dismissible'>
                 <h4><i class='icon fa fa-check'></i> Sukses!</h4>
@@ -58,10 +58,10 @@ switch ($_GET[act]) {
             </tr>
           </thead>
 		  <tbody>";
-                $hasil = mysql_query("SELECT * FROM post where nama_post like '%$_POST[keyword]%'");
+                $hasil = mysqli_query($conn,"SELECT * FROM post where nama_post like '%$_POST[keyword]%'");
                 $no = 1;
                 $counter = 1;
-                while ($r = mysql_fetch_array($hasil)) {
+                while ($r = mysqli_fetch_array($hasil)) {
                     if ($counter % 2 == 0)
                         $warna = "dark";
                     else
@@ -100,11 +100,11 @@ switch ($_GET[act]) {
           </thead>
 		  <tbody>
 		  ";
-                $hasil = mysql_query("SELECT * FROM post ORDER BY kode_post limit $offset,$limit");
+                $hasil = mysqli_query($conn,"SELECT * FROM post ORDER BY kode_post limit $offset,$limit");
                 $no = 1;
                 $no = 1 + $offset;
                 $counter = 1;
-                while ($r = mysql_fetch_array($hasil)) {
+                while ($r = mysqli_fetch_array($hasil)) {
                     if ($counter % 2 == 0)
                         $warna = "dark";
 					if (strlen($r[det_post]) > 150)
@@ -187,8 +187,8 @@ switch ($_GET[act]) {
         break;
 
     case "editpost":
-        $edit = mysql_query("SELECT * FROM post WHERE kode_post='$_GET[id]'");
-        $r = mysql_fetch_array($edit);
+        $edit = mysqli_query($conn,"SELECT * FROM post WHERE kode_post='$_GET[id]'");
+        $r = mysqli_fetch_array($edit);
         if ($r[gambar]) {
             $gambar = 'gambar/' . $r[gambar];
         } else {
