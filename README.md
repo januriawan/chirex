@@ -101,6 +101,9 @@ Semoga hasil karya ini dapat berguna serta bermanfaat bagi perkembangan Teknolog
 
 * 0.0.1
     * Work in progress
+    
+ * 0.0.2
+    * Updated to Php.7 by https://github.com/triannoviandi
 
 ## Meta
 
