@@ -23,8 +23,8 @@ $passwordlama = $_POST['oldPass'];
 $passwordbaru1 = $_POST['newPass1'];
 $passwordbaru2 = $_POST['newPass2'];
 $query = "SELECT * FROM admin WHERE username = '$user'";
-$hasil = mysql_query($query);
-$data  = mysql_fetch_array($hasil);
+$hasil = mysqli_query($conn, $query);
+$data  = mysqli_fetch_array($hasil);
 
 if ($data['password'] ==  md5($passwordlama))
 {
@@ -32,7 +32,7 @@ if ($data['password'] ==  md5($passwordlama))
 	{
 		$passwordbaruenkrip = md5($passwordbaru1);
 		$query = "UPDATE admin SET password = '$passwordbaruenkrip' WHERE username = '$user' ";
-		$hasil = mysql_query($query);
+		$hasil = mysqli_query($conn, $query);
 		
 		if ($hasil) echo "<h2><a href='#'></a></h1>Password berhasil diubah";
 	}

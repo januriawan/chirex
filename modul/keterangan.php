@@ -4,8 +4,8 @@
 <div class="row">
 
   <?php
-  $hasil = mysql_query("SELECT * FROM post ORDER BY kode_post");
-  while ($r = mysql_fetch_array($hasil)) {
+  $hasil = mysqli_query($conn,"SELECT * FROM post ORDER BY kode_post");
+  while ($r = mysqli_fetch_array($hasil)) {
       ?>
 
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" data-aos="fade-right">

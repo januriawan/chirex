@@ -8,7 +8,7 @@ $act = $_GET[act];
 
 // Hapus post
 if ($module == 'post' AND $act == 'hapus') {
-    mysql_query("DELETE FROM post WHERE kode_post='$_GET[id]'");
+    mysqli_query($conn,"DELETE FROM post WHERE kode_post='$_GET[id]'");
     header('location:../../index.php?module=' . $module);
 }
 
@@ -19,7 +19,7 @@ elseif ($module == 'post' AND $act == 'input') {
     $srn_post = $_POST[srn_post];
     $fileName = $_FILES['gambar']['name'];
     move_uploaded_file($_FILES['gambar']['tmp_name'], "../../gambar/" . $_FILES['gambar']['name']);
-    mysql_query("INSERT INTO post(
+    mysqli_query($conn,"INSERT INTO post(
 			      nama_post,det_post,srn_post,gambar) 
 	                       VALUES(
 				'$nama_post','$det_post','$srn_post','$fileName')");
@@ -37,14 +37,14 @@ elseif ($module == 'post' AND $act == 'update') {
     if ($fileName){
     move_uploaded_file($_FILES['gambar']['tmp_name'], "../../gambar/" . $_FILES['gambar']['name']);
 
-    mysql_query("UPDATE post SET
+    mysqli_query($conn,"UPDATE post SET
 					nama_post   = '$nama_post',
 					det_post   = '$det_post',
 					srn_post   = '$srn_post',
 					gambar   = '$fileName'
                WHERE kode_post       = '$_POST[id]'");
     } else {
-        mysql_query("UPDATE post SET
+        mysqli_query($conn,"UPDATE post SET
 					nama_post   = '$nama_post',
 					det_post   = '$det_post',
 					srn_post   = '$srn_post'
