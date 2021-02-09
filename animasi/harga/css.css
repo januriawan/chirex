@@ -1,0 +1,523 @@
+.rain {
+  display: none;
+}
+
+.label-rain {
+  cursor: pointer;
+  position: relative;
+  width: 30px;
+  height: 16px;
+  border: 2px solid coral;
+  background: #FFF;
+  border-radius: 1em;
+  padding: .25em 10px .25em 24px;
+  font: .8em/1.2 Nunito, sans-serif;
+  color: #444;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+
+.label-rain__text {
+  display: block;
+  transition: transform .2s;
+}
+
+.label-rain:before {
+  content: 'rain';
+  position: absolute;
+  left: -34px;
+  transition: transform .2s;
+}
+
+.label-rain:after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: coral;
+  transition: transform .2s;
+}
+
+.illustration {
+  background: #fff;
+  transition: background 1s;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  box-sizing: border-box;
+  max-width: 100%;
+  padding: 0 1em;
+}
+
+svg *[class^=st] {
+  transition: fill 1s, stroke 1s;
+}
+
+#blades {
+  transform-origin: 82.7px 55.2px;
+  animation-name: windmill;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#tractor {
+  animation-name: tractor;
+  animation-duration: .05s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.wing-up,
+.wing-down{
+  transform-origin: center center;
+  animation-duration: .1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.wing-up {
+  animation-name: wing-up;
+}
+
+.wing-down {
+  animation-name: wing-down;
+  animation-duration: .1s;
+}
+
+svg *[id^="butterfly"] {
+  animation-iteration-count: infinite;
+}
+
+#butterfly1 {
+  transform-origin: 421px 115px;
+  animation-name: butterfly1;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+}
+
+#butterfly2, #butterfly3 {
+  transform-origin: 437px 92px;
+  animation-name: butterfly2;
+  animation-duration: 2.5s;
+  animation-timing-function: linear;
+}
+
+#butterfly1 .wing-up,
+#butterfly1 .wing-down,
+#butterfly3 .wing-up,
+#butterfly3 .wing-down {
+  transform-origin: center 128px;
+}
+
+g[id^="rain"] {
+  opacity: 0;
+  transition: none;
+}
+
+#sun {
+  transition: opacity 1s;
+}
+
+.st0,
+.st33 {
+  fill: hsla(47, 100%, 56%, 1);
+}
+
+.st1 {
+  fill: hsla(42, 100%, 50%, 1);
+}
+
+.st2 {
+  fill: none;
+  stroke: #FFF;
+  stroke-miterlimit: 10;
+}
+
+.st3 {
+  fill: hsla(0, 100%, 100%, 1);
+}
+
+.st4 {
+  fill: hsla(179, 46%, 74%, 1);
+}
+
+.st5 {
+  fill: hsla(84, 100%, 37%, 1);
+}
+
+.st6 {
+  fill: hsla(47, 100%, 56%, .2);
+}
+
+.st7 {
+  clip-path:  url(#XMLID_199_);
+}
+
+.st7,
+.st14,
+.st15,
+.st23 {
+  fill: hsla(0, 40%, 31%, 1);
+}
+
+.st8 {
+  fill: hsla(107, 48%, 36%, 1);
+}
+
+.st9 {
+  clip-path:  url(#XMLID_203_);
+  fill: hsla(38, 100%, 50%, 1);
+}
+
+.st10 {
+  fill: hsla(47, 100%, 56%, .3);
+}
+
+.st11 {
+  clip-path:  url(#XMLID_204_);
+  fill: hsla(30, 100%, 50%, 1);
+}
+
+.st12 {
+  clip-path: url(#XMLID_207_);
+  fill: hsla(28, 100%, 28%, .5);
+}
+
+.st13 {
+  clip-path: url(#XMLID_207_);
+}
+
+.st13,
+.st34 {
+  fill: hsla(28, 100%, 28%, 1);
+}
+
+.st15 {
+  stroke:  hsla(0, 100%, 100%, 1);
+  stroke-width:  1.9848;
+  stroke-miterlimit:  10;
+}
+
+.st16 {
+  fill: hsla(5, 100%, 63%, 1);
+}
+
+.st17 {
+  fill: none;
+  stroke:  hsla(0, 100%, 100%, 1);
+  stroke-width:  4.2356;
+  stroke-linecap:  round;
+  stroke-miterlimit:  10;
+}
+
+.st18,
+.st20 {
+  fill: hsla(27, 100%, 36%, 1);
+}
+
+.st19 {
+  fill: none;
+  stroke: hsla(0, 100%, 100%, 1);
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st20 {
+  clip-path: url(#XMLID_208_);
+}
+
+.st21 {
+  fill: none;
+  stroke: hsla(0, 100%, 100%, 1);
+  stroke-width: 5.2945;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st22 {
+  fill: none;
+  stroke: hsla(0, 100%, 100%, 1);
+  stroke-width: 2.9879;
+  stroke-miterlimit: 10;
+}
+
+.st23 {
+  stroke: hsla(0, 100%, 100%, 1);
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.st24 {
+  fill: none;
+  stroke: hsla(0, 100%, 100%, 1);
+  stroke-width: 1.8555;
+  stroke-miterlimit: 10;
+}
+
+.st25 {
+  fill: none;
+  stroke: hsla(0, 40%, 31%, 1);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+}
+
+.st26 {
+  fill: hsla(201, 69%, 49%, 1);
+}
+
+.st27 {
+  fill: hsla(291, 9%, 16%, 1);
+}
+
+.st28 {
+  fill: hsla(47, 90%, 96%, 1);
+}
+
+.st29 {
+  fill: hsla(88, 72%, 39%, 1);
+}
+
+.st30 {
+  fill: hsla(71, 50%, 46%, 1);
+}
+
+.st31 {
+  fill: none;
+  stroke: hsla(291, 9%, 16%, 1);
+  stroke-miterlimit: 10;
+}
+
+.st32 {
+  fill: hsla(210, 9%, 30%, 1);
+}
+
+.st33 {
+  opacity: 0.6;
+}
+
+.st35 {
+  fill: hsla(26, 100%, 59%, 1);
+}
+
+.rain:checked ~ .illustration {
+  background: darkgray;
+}
+
+.rain:checked ~ .illustration .label-rain:before,
+.rain:checked ~ .illustration .label-rain:after,
+.rain:checked ~ .illustration .label-rain__text {
+  transform: translateX(42px);
+}
+
+.rain:checked ~ .illustration svg #sun {
+  opacity: .1;
+}
+
+.rain:checked ~ .illustration svg g[id^="rain"] {
+  opacity: 1;
+  transition: opacity 1s ease-in-out 1s;
+}
+
+.rain:checked ~ .illustration svg g[id^="rain"] path {
+  stroke-dasharray: 4;
+  animation-name: rain;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.rain:checked ~ .illustration svg #rain2 path {
+  stroke-dasharray: 7;
+  animation-duration: 1.1s;
+  animation-name: rain-bigger-drops;
+}
+
+.rain:checked ~ .illustration svg  .st0 {
+  fill: hsla(47, 90%, 50%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st1 {
+  fill: hsla(42, 90%, 40%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st3 {
+  fill: hsla(0, 0%, 80%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st4 {
+  fill: hsla(179, 36%, 64%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st5 {
+  fill: hsla(84, 90%, 28%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st6 {
+  fill: hsla(47, 60%, 45%, .2);
+}
+
+.rain:checked ~ .illustration svg  .st7 {
+  fill: hsla(0, 35%, 26%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st8 {
+  fill: hsla(107, 38%, 26%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st9 {
+  fill: hsla(38, 90%, 40%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st10 {
+  fill: hsla(47, 90%, 46%, .3);
+}
+
+.rain:checked ~ .illustration svg  .st11 {
+  fill: hsla(30, 90%, 40%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st12 {
+  fill: hsla(28, 90%, 14%, .5);
+}
+
+.rain:checked ~ .illustration svg  .st13 {
+  fill: hsla(28, 80%, 14%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st14 {
+  fill: hsla(0, 30%, 20%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st15 {
+  fill: hsla(0, 30%, 20%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st16 {
+  fill: hsla(5, 80%, 53%, 1);
+}
+
+.rain:checked ~ .illustration svg .st17,
+.rain:checked ~ .illustration svg .st19,
+.rain:checked ~ .illustration svg .st21,
+.rain:checked ~ .illustration svg .st22,
+.rain:checked ~ .illustration svg .st24 {
+  stroke:  hsla(0, 0%, 90%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st18 {
+  fill: hsla(27, 70%, 26%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st20 {
+  fill: hsla(27, 80%, 26%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st23 {
+  fill: hsla(0, 20%, 21%, 1);
+  stroke: hsla(0, 0%, 90%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st26 {
+  fill: hsla(201, 39%, 40%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st27 {
+  fill: hsla(291, 2%, 5%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st28 {
+  fill: hsla(47, 70%, 85%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st29 {
+  fill: hsla(88, 42%, 30%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st30 {
+  fill: hsla(71, 30%, 35%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st32 {
+  fill: hsla(210, 2%, 20%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st33 {
+  fill: hsla(47, 80%, 45%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st34 {
+  fill: hsla(28, 80%, 18%, 1);
+}
+
+.rain:checked ~ .illustration svg  .st35 {
+  fill: hsla(26, 80%, 50%, 1);
+}
+
+@keyframes windmill {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes tractor {
+  to {
+    transform: scaleY(.95) translateY(8px);
+  }
+}
+
+@keyframes wing-up {
+  to {
+     transform: rotateX(45deg) translateY(1px);
+  }
+}
+
+@keyframes wing-down {
+  to {
+     transform: rotateX(-45deg) translateY(-1px);
+  }
+}
+
+@keyframes butterfly1 {
+  90% {
+    transform-origin: 425px 115px;
+    transform: rotate(340deg);
+  }
+
+  100% {
+    transform-origin: 430px 115px;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes butterfly2 {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes rain {
+  to {
+    stroke-dashoffset: 10000;
+  }
+}
+
+@keyframes rain-bigger-drops {
+  to {
+    stroke-dashoffset: -100;
+  }
+}

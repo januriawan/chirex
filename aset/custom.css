@@ -1,0 +1,8 @@
+.required {
+  color: #e02222;
+  font-size: 12px;
+  padding-left: 2px;
+}
+.table tbody tr > td.warna {
+  background-color: #d0d4db !important;
+}

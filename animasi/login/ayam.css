@@ -1,0 +1,1196 @@
+.chick-wrapper-landing.flip {
+  -webkit-transform: scale(-0.8, 0.8);
+  transform: scale(-0.8, 0.8);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  background-color: #f73434;
+  overflow: hidden;
+}
+h1 {
+    margin: 0;
+    font-size: 6em;
+    font-weight: 100;
+}
+[class|="chick-wrapper"] {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 20px;
+}
+
+@-webkit-keyframes chicken-jump {
+  100% {
+    margin-top: -300px;
+  }
+}
+
+@keyframes chicken-jump {
+  100% {
+    margin-top: -300px;
+  }
+}
+.chick-wrapper-landing {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  margin-top: -90px;
+  cursor: pointer;
+}
+.chick-wrapper-landing.jump {
+  -webkit-animation: chicken-jump 0.4s infinite alternate;
+          animation: chicken-jump 0.4s infinite alternate;
+}
+.chick-wrapper-landing .body {
+  position: absolute;
+  width: 455px;
+  height: 481px;
+  top: 20px;
+  left: 40px;
+  background-image: url("../login/ayam-1.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.chick-wrapper-landing .body [class|="eye"] {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #253671;
+  border-radius: 50%;
+}
+.chick-wrapper-landing .body .eye-left {
+  top: 102px;
+  left: 130px;
+  -webkit-animation: eye-left-move-1 2s infinite;
+          animation: eye-left-move-1 2s infinite;
+}
+.chick-wrapper-landing .body .eye-right {
+  top: 102px;
+  left: 194px;
+  -webkit-animation: eye-right-move-1 2s infinite;
+          animation: eye-right-move-1 2s infinite;
+}
+@-webkit-keyframes eye-left-move-1 {
+  50% {
+    left: 145px;
+  }
+}
+@keyframes eye-left-move-1 {
+  50% {
+    left: 145px;
+  }
+}
+@-webkit-keyframes eye-right-move-1 {
+  50% {
+    left: 208px;
+  }
+}
+@keyframes eye-right-move-1 {
+  50% {
+    left: 208px;
+  }
+}
+@-webkit-keyframes eye-left-move {
+  10% {
+    top: 104px;
+    left: 146px;
+  }
+  12% {
+    top: 110px;
+    left: 150px;
+  }
+  18% {
+    top: 116px;
+    left: 153px;
+  }
+  30% {
+    top: 122px;
+    left: 145px;
+  }
+  35% {
+    top: 124px;
+    left: 140px;
+  }
+  40% {
+    top: 120px;
+    left: 136px;
+  }
+  90% {
+    top: 116px;
+    left: 130px;
+  }
+  95% {
+    top: 110px;
+    left: 128px;
+  }
+  100% {
+    top: 102px;
+    left: 134px;
+  }
+}
+@keyframes eye-left-move {
+  10% {
+    top: 104px;
+    left: 146px;
+  }
+  12% {
+    top: 110px;
+    left: 150px;
+  }
+  18% {
+    top: 116px;
+    left: 153px;
+  }
+  30% {
+    top: 122px;
+    left: 145px;
+  }
+  35% {
+    top: 124px;
+    left: 140px;
+  }
+  40% {
+    top: 120px;
+    left: 136px;
+  }
+  90% {
+    top: 116px;
+    left: 130px;
+  }
+  95% {
+    top: 110px;
+    left: 128px;
+  }
+  100% {
+    top: 102px;
+    left: 134px;
+  }
+}
+@-webkit-keyframes eye-right-move {
+  10% {
+    top: 104px;
+    left: 202px;
+  }
+  12% {
+    top: 110px;
+    left: 206px;
+  }
+  18% {
+    top: 116px;
+    left: 209px;
+  }
+  30% {
+    top: 122px;
+    left: 201px;
+  }
+  35% {
+    top: 124px;
+    left: 196px;
+  }
+  40% {
+    top: 120px;
+    left: 192px;
+  }
+  90% {
+    top: 116px;
+    left: 186px;
+  }
+  95% {
+    top: 110px;
+    left: 184px;
+  }
+  100% {
+    top: 102px;
+    left: 190px;
+  }
+}
+@keyframes eye-right-move {
+  10% {
+    top: 104px;
+    left: 202px;
+  }
+  12% {
+    top: 110px;
+    left: 206px;
+  }
+  18% {
+    top: 116px;
+    left: 209px;
+  }
+  30% {
+    top: 122px;
+    left: 201px;
+  }
+  35% {
+    top: 124px;
+    left: 196px;
+  }
+  40% {
+    top: 120px;
+    left: 192px;
+  }
+  90% {
+    top: 116px;
+    left: 186px;
+  }
+  95% {
+    top: 110px;
+    left: 184px;
+  }
+  100% {
+    top: 102px;
+    left: 190px;
+  }
+}
+.chick-wrapper-landing [class|="wing"] {
+  position: absolute;
+  width: 180px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid #253671;
+  background-color: white;
+  border-radius: 0 0 180px 180px;
+  -webkit-transform: rotate(67deg);
+  transform: rotate(67deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-animation: wing-shake 0.2s infinite alternate;
+          animation: wing-shake 0.2s infinite alternate;
+}
+.chick-wrapper-landing .wing-back {
+  top: 244px;
+  left: 170px;
+  border: 5.4px solid #253671;
+}
+.chick-wrapper-landing .wing-front {
+  top: 244px;
+  left: 344px;
+  border: 6px solid #253671;
+}
+@-webkit-keyframes wing-shake {
+  100% {
+    -webkit-transform: rotate(64deg);
+            transform: rotate(64deg);
+  }
+}
+@keyframes wing-shake {
+  100% {
+    -webkit-transform: rotate(64deg);
+            transform: rotate(64deg);
+  }
+}
+.chick-wrapper-landing.jump [class|="wing"] {
+  -webkit-animation: wing-jump 0.13s infinite alternate;
+          animation: wing-jump 0.13s infinite alternate;
+}
+@-webkit-keyframes wing-jump {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+@keyframes wing-jump {
+  0% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  100% {
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+}
+.egg-lay {
+  position: absolute;
+  bottom: 50px;
+  left: 130px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.egg-lay.lay {
+  -webkit-animation: lay-egg 3s 1;
+          animation: lay-egg 3s 1;
+}
+
+@-webkit-keyframes lay-egg {
+  5% {
+    bottom: 50px;
+    left: 140px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  8% {
+    bottom: 50px;
+    left: 150px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  16% {
+    bottom: 50px;
+    left: 160px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  20% {
+    bottom: 50px;
+    left: 170px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  27% {
+    bottom: 50px;
+    left: 180px;
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg);
+  }
+  30% {
+    bottom: 50px;
+    left: 190px;
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  33% {
+    bottom: 50px;
+    left: 200px;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  36% {
+    bottom: 50px;
+    left: 240px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  38% {
+    bottom: 40px;
+    left: 260px;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  39% {
+    bottom: 20px;
+    left: 300px;
+    -webkit-transform: rotate(39deg);
+            transform: rotate(39deg);
+  }
+  40% {
+    bottom: -40px;
+    left: 340px;
+    -webkit-transform: rotate(41deg);
+            transform: rotate(41deg);
+  }
+  100% {
+    bottom: -403px;
+    left: 600px;
+    -webkit-transform: rotate(41deg);
+            transform: rotate(41deg);
+  }
+}
+
+@keyframes lay-egg {
+  5% {
+    bottom: 50px;
+    left: 140px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  8% {
+    bottom: 50px;
+    left: 150px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  16% {
+    bottom: 50px;
+    left: 160px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  20% {
+    bottom: 50px;
+    left: 170px;
+    -webkit-transform: rotate(-20deg);
+            transform: rotate(-20deg);
+  }
+  27% {
+    bottom: 50px;
+    left: 180px;
+    -webkit-transform: rotate(-13deg);
+            transform: rotate(-13deg);
+  }
+  30% {
+    bottom: 50px;
+    left: 190px;
+    -webkit-transform: rotate(-7deg);
+            transform: rotate(-7deg);
+  }
+  33% {
+    bottom: 50px;
+    left: 200px;
+    -webkit-transform: rotate(-2deg);
+            transform: rotate(-2deg);
+  }
+  36% {
+    bottom: 50px;
+    left: 240px;
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  38% {
+    bottom: 40px;
+    left: 260px;
+    -webkit-transform: rotate(20deg);
+            transform: rotate(20deg);
+  }
+  39% {
+    bottom: 20px;
+    left: 300px;
+    -webkit-transform: rotate(39deg);
+            transform: rotate(39deg);
+  }
+  40% {
+    bottom: -40px;
+    left: 340px;
+    -webkit-transform: rotate(41deg);
+            transform: rotate(41deg);
+  }
+  100% {
+    bottom: -403px;
+    left: 600px;
+    -webkit-transform: rotate(41deg);
+            transform: rotate(41deg);
+  }
+}
+/* egg laying during rest ends */
+.chick-wrapper-run {
+  margin: 0 0 0 40px;
+}
+.chick-wrapper-run .legs {
+  position: absolute;
+  width: 42px;
+  height: 28px;
+  top: 346px;
+  left: 140px;
+}
+.chick-wrapper-run .legs .leg-l {
+  position: absolute;
+  width: 20px;
+  height: 28px;
+  top: 0;
+  left: 0;
+  background-image: url("https://www.efcampaigns.com/lucky_draw/leg-l.png");
+}
+.chick-wrapper-run .legs .leg-r {
+  position: absolute;
+  width: 22px;
+  height: 28px;
+  top: 0;
+  right: 0;
+  background-image: url("https://www.efcampaigns.com/lucky_draw/leg-r.png");
+}
+.chick-wrapper-run .body {
+  position: absolute;
+  width: 275px;
+  height: 355px;
+  top: 20px;
+  left: 40px;
+  background-image: url("../login/ayam-2.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.chick-wrapper-run .body .eye-liner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 76px;
+  left: 76px;
+  border-radius: 50%;
+  border: 5px solid #253671;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.chick-wrapper-run .body .eye-liner .eye {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  left: -3px;
+  background-color: #253671;
+  border-radius: 50%;
+  border: 5px solid #253671;
+}
+.chick-wrapper-run .body .cheek {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 115px;
+  left: 112px;
+  background-color: #d11e3c;
+  border-radius: 50%;
+  border: 5px solid #253671;
+}
+.chick-wrapper-run .wing-back {
+  top: 160px;
+  left: 105px;
+}
+.chick-wrapper-run .wing-front {
+  top: 190px;
+  left: 120px;
+}
+.chick-wrapper-run [class|="wing"] {
+  position: absolute;
+  width: 180px;
+  height: 80px;
+  border-radius: 50%;
+  border: 5px solid #253671;
+  background-color: white;
+  border-radius: 0 0 180px 180px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 0;
+}
+.chick-wrapper-run [class|="sweat"] {
+  position: absolute;
+  width: 35px;
+  height: 28px;
+  background-image: url("https://www.efcampaigns.com/lucky_draw/sweat.png");
+  background-repeat: no-repeat;
+}
+.chick-wrapper-run .sweat-1 {
+  top: 100px;
+  left: 100px;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+}
+.chick-wrapper-run .sweat-2 {
+  top: 100px;
+  left: 178px;
+}
+.chick-wrapper-run .sweat-3 {
+  top: 120px;
+  left: 160px;
+}
+
+.chick-wrapper-run.run .legs .leg-l {
+  left: 10px;
+  -webkit-animation: leg-l-move 0.24s 28 forwards alternate;
+          animation: leg-l-move 0.24s 28 forwards alternate;
+}
+.chick-wrapper-run.run .legs .leg-r {
+  -webkit-animation: leg-r-move 0.24s 29 forwards alternate;
+          animation: leg-r-move 0.24s 29 forwards alternate;
+}
+@-webkit-keyframes leg-l-move {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+}
+@keyframes leg-l-move {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  100% {
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+}
+@-webkit-keyframes leg-r-move {
+  0% {
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+  25% {
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+@keyframes leg-r-move {
+  0% {
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+  25% {
+    -webkit-transform: rotate(-40deg);
+    transform: rotate(-40deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+.chick-wrapper-run.run .body {
+  -webkit-animation: body-move 0.12s 53 forwards alternate;
+          animation: body-move 0.12s 53 forwards alternate;
+}
+.chick-wrapper-run.run .body .eye-liner {
+  -webkit-animation: eye-liner-move 1s 3 forwards alternate;
+          animation: eye-liner-move 1s 3 forwards alternate;
+}
+.chick-wrapper-run.run .body .eye {
+  -webkit-animation: eye-move 1s 3 forwards alternate;
+          animation: eye-move 1s 3 forwards alternate;
+}
+.chick-wrapper-run.run [class|="wing"] {
+  -webkit-animation: wing-move 0.12s 53 forwards alternate;
+          animation: wing-move 0.12s 53 forwards alternate;
+}
+.chick-wrapper-run.run .sweat-1 {
+  -webkit-animation: sweat-1 1.6s 5;
+          animation: sweat-1 1.6s 5;
+}
+.chick-wrapper-run.run .sweat-2 {
+  -webkit-animation: sweat-2 1.6s 5;
+          animation: sweat-2 1.6s 5;
+}
+.chick-wrapper-run.run .sweat-3 {
+  -webkit-animation: sweat-3 1.6s 5;
+          animation: sweat-3 1.6s 5;
+}
+
+@-webkit-keyframes body-move {
+  100% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+}
+
+@keyframes body-move {
+  100% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+}
+@-webkit-keyframes eye-liner-move {
+  100% {
+    height: 23px;
+    top: 80px;
+    border-radius: 23px 23px 30px 30px;
+  }
+}
+@keyframes eye-liner-move {
+  100% {
+    height: 23px;
+    top: 80px;
+    border-radius: 23px 23px 30px 30px;
+  }
+}
+@-webkit-keyframes eye-move {
+  100% {
+    top: -2px;
+    left: -3px;
+  }
+}
+@keyframes eye-move {
+  100% {
+    top: -2px;
+    left: -3px;
+  }
+}
+@-webkit-keyframes wing-move {
+  100% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+}
+@keyframes wing-move {
+  100% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+}
+@-webkit-keyframes sweat-1 {
+  20% {
+    top: 34px;
+    left: 174px;
+  }
+  52% {
+    top: 34px;
+    left: 174px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sweat-1 {
+  20% {
+    top: 34px;
+    left: 174px;
+  }
+  52% {
+    top: 34px;
+    left: 174px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes sweat-2 {
+  33% {
+    top: 42px;
+    left: 220px;
+  }
+  75% {
+    top: 42px;
+    left: 220px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sweat-2 {
+  33% {
+    top: 42px;
+    left: 220px;
+  }
+  75% {
+    top: 42px;
+    left: 220px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes sweat-3 {
+  0% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  60% {
+    top: 66px;
+    left: 260px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  90% {
+    top: 66px;
+    left: 260px;
+    opacity: 0;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sweat-3 {
+  0% {
+    -webkit-transform: rotate(-30deg);
+    transform: rotate(-30deg);
+  }
+  60% {
+    top: 66px;
+    left: 260px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+  90% {
+    top: 66px;
+    left: 260px;
+    opacity: 0;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.chick-wrapper-run.run.rest .body {
+  -webkit-animation: body-move-rest 2s 1 forwards alternate;
+          animation: body-move-rest 2s 1 forwards alternate;
+}
+.chick-wrapper-run.run.rest .body .eye-lid {
+  position: absolute;
+  width: 4px;
+  height: 2px;
+  top: 74px;
+  left: 99px;
+  background-color: white;
+  border-bottom: 5px solid #253671;
+  -webkit-transform: rotate(370deg);
+          transform: rotate(370deg);
+  -webkit-animation: eye-lid-close 0.3s 1 forwards;
+          animation: eye-lid-close 0.3s 1 forwards;
+}
+.chick-wrapper-run.run.rest [class|="wing"] {
+  -webkit-animation: wing-move-rest 2s 1 forwards alternate;
+          animation: wing-move-rest 2s 1 forwards alternate;
+}
+
+@-webkit-keyframes body-move-rest {
+  0% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  100% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+}
+
+@keyframes body-move-rest {
+  0% {
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+  }
+  100% {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+}
+@-webkit-keyframes eye-liner-move-rest {
+  0% {
+    height: 23px;
+    top: 80px;
+    border-radius: 23px 23px 30px 30px;
+  }
+  1% {
+    border-top: 0;
+  }
+  60% {
+    height: 4px;
+    top: 96px;
+    border-radius: 0 0 17px 17px/ 0 0 8px 8px;
+    border-top: 0;
+    -webkit-box-shadow: 0 3px 0 white, 0 8px 0 white;
+            box-shadow: 0 3px 0 white, 0 8px 0 white;
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+  100% {
+    height: 4px;
+    top: 96px;
+    border-radius: 0 0 17px 17px/ 0 0 8px 8px;
+    border-top: 0;
+    -webkit-box-shadow: 0 3px 0 white, 0 8px 0 #253671;
+            box-shadow: 0 3px 0 white, 0 8px 0 #253671;
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+}
+@keyframes eye-liner-move-rest {
+  0% {
+    height: 23px;
+    top: 80px;
+    border-radius: 23px 23px 30px 30px;
+  }
+  1% {
+    border-top: 0;
+  }
+  60% {
+    height: 4px;
+    top: 96px;
+    border-radius: 0 0 17px 17px/ 0 0 8px 8px;
+    border-top: 0;
+    -webkit-box-shadow: 0 3px 0 white, 0 8px 0 white;
+            box-shadow: 0 3px 0 white, 0 8px 0 white;
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+  100% {
+    height: 4px;
+    top: 96px;
+    border-radius: 0 0 17px 17px/ 0 0 8px 8px;
+    border-top: 0;
+    -webkit-box-shadow: 0 3px 0 white, 0 8px 0 #253671;
+            box-shadow: 0 3px 0 white, 0 8px 0 #253671;
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+}
+@-webkit-keyframes eye-move-rest {
+  0% {
+    top: -2px;
+    left: -3px;
+  }
+  1% {
+    top: 6px;
+    height: 0;
+    border: 0;
+  }
+  100% {
+    top: 6px;
+    height: 0;
+    border: 0;
+  }
+}
+@keyframes eye-move-rest {
+  0% {
+    top: -2px;
+    left: -3px;
+  }
+  1% {
+    top: 6px;
+    height: 0;
+    border: 0;
+  }
+  100% {
+    top: 6px;
+    height: 0;
+    border: 0;
+  }
+}
+@-webkit-keyframes eye-lid-close {
+  0% {
+    width: 4px;
+    height: 2px;
+    top: 76px;
+    left: 99px;
+  }
+  60% {
+    width: 43px;
+    height: 6px;
+    top: 76px;
+    left: 75px;
+    border-radius: 0;
+  }
+  100% {
+    width: 43px;
+    height: 36px;
+    top: 74px;
+    left: 75px;
+    /*border-radius: 0 0 14px 14px;*/
+  }
+}
+@keyframes eye-lid-close {
+  0% {
+    width: 4px;
+    height: 2px;
+    top: 76px;
+    left: 99px;
+  }
+  60% {
+    width: 43px;
+    height: 6px;
+    top: 76px;
+    left: 75px;
+    border-radius: 0;
+  }
+  100% {
+    width: 43px;
+    height: 36px;
+    top: 74px;
+    left: 75px;
+    /*border-radius: 0 0 14px 14px;*/
+  }
+}
+@-webkit-keyframes wing-move-rest {
+  0% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+}
+@keyframes wing-move-rest {
+  0% {
+    -webkit-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+  100% {
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+}
+.sweat-last {
+  opacity: 0;
+  top: 83px;
+  left: 180px;
+  -webkit-transform: rotate(96deg);
+  transform: rotate(96deg);
+}
+
+.chick-wrapper-run.run.rest.last [class|="wing"] {
+  -webkit-animation: wing-move-last 0.4s infinite alternate;
+          animation: wing-move-last 0.4s infinite alternate;
+}
+.chick-wrapper-run.run.rest.last .sweat-last {
+  -webkit-animation: sweat-last 3s 1 forwards;
+          animation: sweat-last 3s 1 forwards;
+}
+
+@-webkit-keyframes wing-move-last {
+  0% {
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+
+@keyframes wing-move-last {
+  0% {
+    -webkit-transform: rotate(35deg);
+    transform: rotate(35deg);
+  }
+  100% {
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+  }
+}
+@-webkit-keyframes sweat-last {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    top: 183px;
+    height: 220px;
+    opacity: 0;
+  }
+}
+@keyframes sweat-last {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    top: 183px;
+    height: 220px;
+    opacity: 0;
+  }
+}
+.chick-wrapper-float {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+.chick-wrapper-float .body {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  top: 0;
+  left: 0;
+  background-image: url("https://www.efcampaigns.com/lucky_draw/form-chicken.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  -webkit-animation: plane-float 0.8s infinite alternate;
+          animation: plane-float 0.8s infinite alternate;
+}
+.chick-wrapper-float .wing {
+  position: absolute;
+  width: 100px;
+  height: 39px;
+  top: 146px;
+  left: 93px;
+  border-radius: 50%;
+  border: 5px solid #253671;
+  background-color: white;
+  border-radius: 0 0 100px 100px;
+  border-width: 3px;
+  -webkit-transform: rotate(49deg);
+  transform: rotate(49deg);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 100% 100%;
+  -webkit-animation: plane-wing 0.8s infinite alternate;
+          animation: plane-wing 0.8s infinite alternate;
+}
+
+@-webkit-keyframes plane-float {
+  100% {
+    top: 5px;
+  }
+}
+
+@keyframes plane-float {
+  100% {
+    top: 5px;
+  }
+}
+@-webkit-keyframes plane-wing {
+  100% {
+    top: 151px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+@keyframes plane-wing {
+  100% {
+    top: 151px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+.chick-wrapper-landing,
+.chick-wrapper-float {
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  transition: opacity 2s;
+}
+.chick-wrapper-landing.show,
+.chick-wrapper-float.show {
+  opacity: 1;
+}
