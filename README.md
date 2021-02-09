@@ -22,7 +22,6 @@
 Gunakan XAMPP v.3.2.2 dengan <b>Php 5 (*)</b> & <b>mysql 5.6</b> : setting nama database anda di file config.php 
 * di php 7 ke atas akan terjadi error, silahkan fix bug nya jika ingin menggunakan php 7.
 * <b>Update 0.03:</b> Sudah bisa pakai php 7.
-
 ```<?php
 $server = "localhost";
 $username = "root";
@@ -33,6 +32,9 @@ mysql_connect($server,$username,$password) or die("Koneksi gagal");
 mysql_select_db($database) or die("Maaf, Database tidak bisa dibuka");
 ?>
 ```
+Login dengan /chirex/formlogin 
+Username : <b>admin</b> 
+Password : <b>admin</b>
 ## Formula yang digunakan:
 ```
 Posted by totoharyanto on November 25th, 2011 / totoharyanto.staff.ipb.ac.id/2011/11/25/certainty-factor-cf/
