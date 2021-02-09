@@ -21,7 +21,7 @@
 
 Gunakan XAMPP v.3.2.2 dengan <b>Php 5 (*)</b> & <b>mysql 5.6</b> : setting nama database anda di file config.php 
 * di php 7 ke atas akan terjadi error, silahkan fix bug nya jika ingin menggunakan php 7.
-* Update: Sudah bisa pakai php 7.
+* <b>Update 0.03:</b> Sudah bisa pakai php 7.
 
 ```<?php
 $server = "localhost";
@@ -126,7 +126,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
  
 ## Donation
 
-* Bagi yang ingin berdonasi untuk pengembangan sistem yang lain, boleh kirim ke email paypal saya 
+* Bagi yang ingin <b>berdonasi</b> untuk pengembangan sistem yang lain, boleh kirim ke email paypal saya 
    * Alamat paypal : fajanuriawan@gmail.com 
    * Siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya.
 
