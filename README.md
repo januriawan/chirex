@@ -19,9 +19,7 @@
 
 ## Configure
 
-Gunakan XAMPP v.3.2.2 dengan <b>Php 5 (*)</b> & <b>mysql 5.6</b> : setting nama database anda di file config.php 
-* di php 7 ke atas akan terjadi error, silahkan fix bug nya jika ingin menggunakan php 7.
-* <b>Update 0.03:</b> Sudah bisa pakai php 7.
+Gunakan XAMPP versi <b>PHP 7.4.9(*)</b> & <b>10.4.14-MariaDB</b> : setting nama database anda di file config.php 
 ```<?php
 $server = "localhost";
 $username = "root";
@@ -123,8 +121,8 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 
 * Dilarang keras di perjual-belikan, source ini saya publikasi untuk keperluan belajar saja.
     * Untuk yang mau file dokumentasi / skripsi bisa request dengan menghubungi saya (gratis).
-    * Update (Karena banyak yang meminta via Email, Sosmed dll. Mohon maaf karena keterbatasan waktu saya tidak bisa membalas, satu persatu
-    untuk itu silakan download di [Link Ini](https://www.scribd.com/document/431280343/Dokumentasi-Sistem-Pakar-Ayam-Skripsi)
+    * <b>Update</b> (Karena banyak yang meminta via Email, Sosmed dll. Mohon maaf karena keterbatasan waktu saya tidak bisa membalas, satu persatu
+    untuk itu silakan <b>download</b> di [Link Ini](https://www.scribd.com/document/431280343/Dokumentasi-Sistem-Pakar-Ayam-Skripsi)
  
 ## Donation
 
