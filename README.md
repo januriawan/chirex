@@ -128,6 +128,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 
 * Bagi yang ingin <b>berdonasi</b> untuk pengembangan sistem yang lain, boleh kirim ke email paypal saya 
    * Alamat paypal : fajanuriawan@gmail.com 
+   * Saweria.co : [Donasi Sekarang](https://saweria.co/januriawan)
    * Siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya.
 
 
