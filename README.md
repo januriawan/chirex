@@ -111,7 +111,7 @@ Semoga hasil karya ini dapat berguna serta bermanfaat bagi perkembangan Teknolog
 
 ## Meta
 
-Copyright – [@januriawan](https://twitter.com/januriawan) – januriawan@protonmail.com
+Copyright – [@januriawan](https://twitter.com/januriawan) – januriawan@duck.com
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
@@ -126,8 +126,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
  
 ## Donation
 
-* Bagi yang ingin <b>berdonasi</b> untuk pengembangan sistem yang lain, boleh kirim ke email paypal saya 
-   * Alamat paypal : fajanuriawan@gmail.com 
+* Bagi yang ingin <b>berdonasi</b> untuk pengembangan sistem yang lain, boleh kirim ke saweria saya 
    * Saweria.co : [Donasi Sekarang](https://saweria.co/januriawan)
    * Siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya.
 
