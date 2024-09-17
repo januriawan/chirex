@@ -114,7 +114,7 @@ Semoga hasil karya ini dapat berguna serta bermanfaat bagi perkembangan Teknolog
  * 0.0.3
     * Bug Fix Update
 
-## Meta
+## License
 
 Copyright – [@januriawan](https://twitter.com/januriawan) – januriawan@duck.com
 
