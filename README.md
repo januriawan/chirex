@@ -122,7 +122,7 @@ Distributed under the XYZ license. See ``LICENSE`` for more information.
 
 [https://github.com/januriawan](https://github.com/januriawan/)
 
-## Disclaimer
+## Disclaimer & Documentation
 
 * Dilarang keras di perjual-belikan, source ini saya publikasi untuk keperluan belajar saja.
     * Untuk yang mau file dokumentasi / skripsi bisa request dengan menghubungi saya (gratis).
