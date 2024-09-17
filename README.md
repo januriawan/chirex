@@ -1,13 +1,12 @@
+# Chirex.1.0
+> Sistem Pakar Diagnosa Penyakit Pada Ayam Menggunakan Metode Certainty Factor Berbasis Website Responsive.
+>
+
 ## Donation
 
 * Bagi yang ingin <b>berdonasi</b> untuk pengembangan sistem yang lain, boleh kirim ke saweria saya 
    * Saweria.co : [Donasi Sekarang](https://saweria.co/januriawan)
    * Siapapun, berapapun, saya ucapkan terimakasih sebanyak-banyaknya.
-
-# Chirex.1.0
-> Sistem Pakar Diagnosa Penyakit Pada Ayam Menggunakan Metode Certainty Factor Berbasis Website Responsive.
->
-
 
 ## Berikut tampilan sistem yang di buat.
 
